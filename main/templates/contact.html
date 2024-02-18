@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block 'content'%}
+  </div>
+
+  <!-- contact section -->
+  <section class="contact_section  long_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form_container">
+            <div class="heading_container">
+              <h2>
+                Contact Us
+              </h2>
+            </div>
+            <form action="" method="post" >
+              {% csrf_token %}
+                <div>
+                  <input type="text" name="name" placeholder="name" />
+                </div>
+                <div>
+                  <input type="email" name="email" placeholder="email" />
+                </div>
+                <div>
+                  <input type="text" name="message" class="message-box" placeholder="message" />
+                </div>
+              <div class="btn_box">
+                <button type="submit">
+                  SEND
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="map_container">
+            <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.079855036101!2d44.50913437600864!3d40.185036271477806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abce2901dc449%3A0x57e056fa9edcab3e!2z0JjQvSDQldGA0LXQstCw0L3RhtC4INCe0YLQtdC70Yw!5e0!3m2!1sru!2sam!4v1700061078085!5m2!1sru!2sam" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end contact section -->
+
+ 
+{%endblock%}
